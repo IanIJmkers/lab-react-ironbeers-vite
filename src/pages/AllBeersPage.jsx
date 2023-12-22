@@ -1,3 +1,9 @@
-function AllBeersPage() {}
+import React from 'react'
 
-export default AllBeersPage;
+export default function AllBeersPage() {
+  return (
+    <div>
+      AllBeers
+    </div>
+  )
+}

@@ -1,9 +1,26 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import beersImg from "../assets/beers.png";
+import randomBeerImg from "../assets/random-beer.png";
+import newBeerImg from "../assets/new-beer.png";
 
 export default function HomePage() {
   return (
     <div>
-      HomePage
+      <Link to="/beers">
+        <img src={beersImg} alt="BeerImage" className="px-10 pt-10"/>
+        <h2 className="px-10 pt-2">All Beers</h2>
+      </Link>
+
+      <Link to="/randomBeer">
+        <img src={randomBeerImg} alt="RandomBeer" className="px-10 pt-10" />
+        <h2 className="px-10 pt-2">Random Beer</h2>
+      </Link>
+
+      <Link to="/newBeer">
+        <img src={newBeerImg} alt="NewBeer" className="px-10 pt-10" />
+        <h2 className="px-10 pt-2">Create a Beer</h2>
+      </Link>
     </div>
-  )
+  );
 }

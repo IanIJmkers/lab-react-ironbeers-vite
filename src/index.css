@@ -19,3 +19,7 @@ form {
 .btn-round {
   margin: 20px;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
